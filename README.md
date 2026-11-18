@@ -89,7 +89,7 @@ Backend engineer at **Orocorp Technologies**, working on fintech payments and le
 
 - **React** and **Next.js**
 - TypeScript in strict mode, Tailwind CSS
-- Server-validated cart and checkout state
+- Server-validated cart
 
 </td>
 </tr>
