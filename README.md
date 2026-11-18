@@ -1,14 +1,15 @@
 <!-- Header -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:1f6feb,100:ffa657&height=200&section=header&text=Harshit%20Kumar&fontSize=60&fontColor=ffffff&fontAlignY=38&desc=Backend%20Engineer%20%C2%B7%20Distributed%20Systems%20%C2%B7%20Databases&descSize=18&descAlignY=58&animation=fadeIn" alt="Harshit Kumar" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:1f6feb,100:ffa657&height=200&section=header&text=Harshit%20Kumar&fontSize=60&fontColor=ffffff&fontAlignY=38&desc=Backend%20Engineer%20%C2%B7%20Fintech%20Ledgers%20%C2%B7%20Distributed%20Systems&descSize=18&descAlignY=58&animation=fadeIn" alt="Harshit Kumar" width="100%" />
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3000&pause=900&color=FFA657&center=true&vCenter=true&width=720&lines=Backend+systems+in+Go%2C+TypeScript+and+Python;Storage+engines%3A+LSM+trees%2C+WAL%2C+MVCC;Payments+%26+lending+ledgers+at+Oro;Profiling%2C+benchmarking%2C+performance+tuning;Cloud%3A+AWS+CDK%2C+Docker%2C+GitHub+Actions" alt="Typing intro" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3000&pause=900&color=FFA657&center=true&vCenter=true&width=760&lines=Backend+Engineer+at+Oro+%C2%B7+payments+%26+lending+ledgers;Payments+API%3A+1.4s+%E2%86%92+90ms;Loan+compounding%3A+5.5h+%E2%86%92+6+min+on+AWS+Lambda;SYCL+GPU+kernels%3A+up+to+40%C3%97+faster;Built+emberkv%3A+a+Redis-compatible+database+in+Go" alt="Typing intro" />
 </p>
 
 <p align="center">
   <a href="https://www.linkedin.com/in/harshit-kumar-733925251/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+  <img src="https://img.shields.io/badge/Rising%20Star-Oro%20Corp-ffa657?style=for-the-badge&logo=starship&logoColor=white" alt="Rising Star award at Oro Corp" />
   <img src="https://komarev.com/ghpvc/?username=1001harshit&style=for-the-badge&color=1f6feb&label=Profile+views" alt="Profile views" />
 </p>
 
@@ -16,7 +17,9 @@
 
 ### 👋 About me
 
-Backend engineer at **Orocorp Technologies**, working on fintech payments and lending ledgers. I like understanding systems all the way down: I built a database storage engine from scratch to learn how they really work. I also research GPU / HPC workloads. **DA-IICT**, class of 2026.
+Backend engineer at **Oro Corp**, building production financial infrastructure across a **25+ microservice** estate: serverless pipelines, ledger correctness, database performance, reconciliation, and secrets and auth hardening. I own features end-to-end, from schema to API, and enjoy both debugging money-movement correctness and cutting latency out of hot paths. Also into GPU/HPC research.
+
+🎓 B.Tech in ICT, **Dhirubhai Ambani University** (2022–2026)
 
 ---
 
@@ -26,94 +29,124 @@ Backend engineer at **Orocorp Technologies**, working on fintech payments and le
 <tr>
 <td width="50%" valign="top">
 
-#### ⚙️ Backend engineering
-<img src="https://skillicons.dev/icons?i=go,ts,nodejs,py,fastapi&theme=dark" height="40" alt="Go, TypeScript, Node.js, Python, FastAPI" />
+#### ⚙️ Backend & microservices
+<img src="https://skillicons.dev/icons?i=nodejs,express,sequelize,fastapi,go" height="40" alt="Node.js, Express, Sequelize, FastAPI, Go" />
 
-- REST APIs with **Fastify** and **FastAPI**
-- Concurrency in Go: goroutines, locks, lock-free fast paths
-- Network protocols: a full **Redis (RESP)** server, AUTH and TLS
-- Fintech: payment flows and ledgers
-
-</td>
-<td width="50%" valign="top">
-
-#### 🗄️ Databases & storage internals
-<img src="https://skillicons.dev/icons?i=postgres,redis,sqlite&theme=dark" height="40" alt="PostgreSQL, Redis, SQLite" />
-
-- **LSM trees**: WAL with group commit, memtables, SSTables, compaction
-- **MVCC**, point-in-time reads, crash recovery
-- Bloom filters, block caches, on-disk formats
-- Data modelling in PostgreSQL, Redis and SQLite
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-#### 🚀 Performance & reliability
-<img src="https://skillicons.dev/icons?i=go,linux,bash&theme=dark" height="40" alt="Go, Linux, Bash" />
-
-- Profiling with **pprof** (CPU, mutex contention)
-- Benchmarking against Redis, Kvrocks and Dragonfly
-- Tail-latency work (p99 halved in emberkv)
-- Differential and crash testing (`kill -9`)
+- REST APIs and WebSockets on **Node.js / Express** and **FastAPI**
+- Microservices: 25+ services in production at Oro
+- Idempotent state machines, RBAC-scoped APIs, multi-tenant systems
+- Service-to-service auth with rotatable tokens
 
 </td>
 <td width="50%" valign="top">
 
-#### ☁️ Cloud & DevOps
-<img src="https://skillicons.dev/icons?i=aws,docker,githubactions,git&theme=dark" height="40" alt="AWS, Docker, GitHub Actions, Git" />
+#### 🗄️ Databases & query performance
+<img src="https://skillicons.dev/icons?i=postgres,mysql,mongodb,redis,sqlite,firebase" height="40" alt="PostgreSQL, MySQL, MongoDB, Redis, SQLite, Firebase" />
 
-- Infrastructure as code with **AWS CDK**
-- Docker images, multi-platform releases
-- CI/CD with GitHub Actions, GoReleaser, Homebrew taps
-- Secrets handled through AWS Secrets Manager
+- **PostgreSQL** tuning: N+1 batching (134 → 5 queries/request), `CONCURRENTLY` indexes, anti-joins
+- Payments API **1.4s → 90ms (≈15×)**
+- Storage internals: LSM trees, WAL, MVCC ([emberkv](https://github.com/1001harshit/emberkv))
 
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
 
-#### 🤖 AI & LLM apps
-<img src="https://skillicons.dev/icons?i=py,fastapi,redis&theme=dark" height="40" alt="Python, FastAPI, Redis" />
+#### ☁️ AWS, serverless & DevOps
+<img src="https://skillicons.dev/icons?i=aws,docker,githubactions,linux" height="40" alt="AWS, Docker, GitHub Actions, Linux" />
 
-- Agent workflows with **LangGraph**
-- **RAG** with ChromaDB and local models via Ollama
-- Rule-based safety checks around model output
+- **Lambda, Step Functions, SQS, Secrets Manager, S3, RDS**
+- Event-driven pipeline with idempotent workers and dead-letter queues: **5.5h → 6 min** over 80K+ daily loans
+- CI/CD with GitHub Actions; Docker
 
 </td>
 <td width="50%" valign="top">
 
-#### 🎨 Frontend
-<img src="https://skillicons.dev/icons?i=react,nextjs,ts,tailwind&theme=dark" height="40" alt="React, Next.js, TypeScript, Tailwind" />
+#### 🔐 Security & auth
+<img src="https://skillicons.dev/icons?i=nodejs,aws,postman" height="40" alt="Node.js, AWS, Postman" />
 
-- **React** and **Next.js**
-- TypeScript in strict mode, Tailwind CSS
-- Server-validated cart
+- JWT and httpOnly **cookie auth**, double-submit + HMAC-bound **CSRF** protection
+- Moved secrets for 23 microservices from `.env` files to **AWS Secrets Manager**
+- Fixed critical and high CVEs; closed third-party audit findings
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+#### 💸 Fintech & ledger correctness
+<img src="https://skillicons.dev/icons?i=postgres,nodejs,redis" height="40" alt="PostgreSQL, Node.js, Redis" />
+
+- Idempotency guards on cross-service fund transfers
+- Reconciliation across 3 databases (Oro ↔ partner banks)
+- Interest computation, loan closure and lending-ledger flows
+
+</td>
+<td width="50%" valign="top">
+
+#### 🚀 GPU / HPC & algorithms
+<img src="https://skillicons.dev/icons?i=c,cpp,py" height="40" alt="C, C++, Python" />
+
+- **SYCL** interpolation kernels: up to **40× GPU** and **3× CPU** speedup
+- Spatial data structures: quad trees, Fenwick and segment trees, hash maps
+- Profiling and benchmarking (pprof, contention analysis)
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+#### 🎨 Frontend & mobile
+<img src="https://skillicons.dev/icons?i=react,nextjs,tailwind,flutter,figma" height="40" alt="React, Next.js, Tailwind, Flutter, Figma" />
+
+- **React** and **Next.js** with Tailwind CSS
+- Cross-platform mobile apps in **Flutter**
+
+</td>
+<td width="50%" valign="top">
+
+#### 🤖 AI & machine learning
+<img src="https://skillicons.dev/icons?i=py,fastapi,redis" height="40" alt="Python, FastAPI, Redis" />
+
+- **RAG** pipelines for explainable outputs ([AeroTriage](https://github.com/1001harshit/aerotriage))
+- Stanford certificates: Supervised ML, Advanced Learning Algorithms
 
 </td>
 </tr>
 </table>
 
+#### 🧰 Full toolbox
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=c,cpp,js,ts,py,go,html,css&theme=dark" height="48" alt="Languages" /><br/>
+  <img src="https://skillicons.dev/icons?i=nodejs,express,fastapi,react,nextjs,tailwind,flutter&theme=dark" height="48" alt="Frameworks" /><br/>
+  <img src="https://skillicons.dev/icons?i=postgres,mysql,mongodb,redis,sqlite,firebase,aws&theme=dark" height="48" alt="Databases and cloud" /><br/>
+  <img src="https://skillicons.dev/icons?i=git,github,githubactions,docker,postman,vscode,figma,androidstudio&theme=dark" height="48" alt="Tools" />
+</p>
+
 ---
+
+### 💼 Experience
+
+| Role | Where | When |
+|---|---|---|
+| **Backend Engineer** | Oro Corp, GIFT City | Dec 2025 – present |
+| **Research Intern** (GPU/HPC) | Dhirubhai Ambani University | May – Jul 2025 |
+| **Project Intern** (Flutter + Node.js) | Institute for Plasma Research | Jun – Jul 2024 |
 
 ### 🛠️ Projects
 
-| Project | What it shows |
+| Project | What it is |
 |---|---|
-| [**emberkv**](https://github.com/1001harshit/emberkv) | A Redis-compatible database in Go with time travel (ASOF, ROLLBACK, BRANCH). Storage internals, concurrency, benchmarking. Matches Redis 8 on 228 of 229 commands, uses 2.3× less memory, loses 0 writes on `kill -9`. |
-| [**AeroTriage**](https://github.com/1001harshit/aerotriage) | Offline-first AI medical triage with LangGraph, RAG and a Redis-backed WhatsApp booking flow. |
-| [**Lumen**](https://github.com/1001harshit/lumen-store) | Next.js 16 storefront with a deliberately light back end and a server-validated cart. |
-| [**MockFlow**](https://github.com/1001harshit/mockflow) | API mocking platform for development teams, in TypeScript. |
-| **StayHub** *(private)* | Vacation-rental marketplace: React, Fastify, PostgreSQL, deployed on AWS with CDK. |
+| [**emberkv**](https://github.com/1001harshit/emberkv) | Redis-compatible database in Go with time travel. Matches Redis 8 on 228/229 commands, 2.3× less memory, 0 writes lost on `kill -9`. |
+| [**AeroTriage**](https://github.com/1001harshit/aerotriage) | Offline-first AI triage with RAG, FastAPI, Redis and WhatsApp (Twilio) booking. |
+| [**BlogX**](https://github.com/1001harshit/IT314-G6-Blogging-Platform) | Blogging platform with auth, real-time updates and email notifications. |
 
-<details>
-<summary>▶️ See emberkv in action</summary>
-<br/>
-<p align="center">
-  <img src="https://raw.githubusercontent.com/1001harshit/emberkv/main/docs/demo.gif" alt="emberkv time-travel demo: FLUSHALL, then ROLLBACK restores the data" width="640" />
-</p>
-</details>
+### 🏆 Achievements
+
+- 🌟 **Rising Star** award at Oro Corp for impact, ownership and delivery
+- 🎯 **All India Rank 8300** in JEE Main 2022 (1M+ candidates)
+- 👥 Team lead on a two-semester project ranked among the best of the batch
 
 ---
 
