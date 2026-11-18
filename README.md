@@ -27,7 +27,7 @@ Backend engineer at **Orocorp Technologies**, working on fintech payments and le
 <td width="50%" valign="top">
 
 #### ⚙️ Backend engineering
-<img src="https://skillicons.dev/icons?i=go,ts,nodejs,py,fastapi&theme=dark" alt="Go, TypeScript, Node.js, Python, FastAPI" />
+<img src="https://skillicons.dev/icons?i=go,ts,nodejs,py,fastapi&theme=dark" height="40" alt="Go, TypeScript, Node.js, Python, FastAPI" />
 
 - REST APIs with **Fastify** and **FastAPI**
 - Concurrency in Go: goroutines, locks, lock-free fast paths
@@ -38,7 +38,7 @@ Backend engineer at **Orocorp Technologies**, working on fintech payments and le
 <td width="50%" valign="top">
 
 #### 🗄️ Databases & storage internals
-<img src="https://skillicons.dev/icons?i=postgres,redis,sqlite&theme=dark" alt="PostgreSQL, Redis, SQLite" />
+<img src="https://skillicons.dev/icons?i=postgres,redis,sqlite&theme=dark" height="40" alt="PostgreSQL, Redis, SQLite" />
 
 - **LSM trees**: WAL with group commit, memtables, SSTables, compaction
 - **MVCC**, point-in-time reads, crash recovery
@@ -51,7 +51,7 @@ Backend engineer at **Orocorp Technologies**, working on fintech payments and le
 <td width="50%" valign="top">
 
 #### 🚀 Performance & reliability
-<img src="https://skillicons.dev/icons?i=go,linux,bash&theme=dark" alt="Go, Linux, Bash" />
+<img src="https://skillicons.dev/icons?i=go,linux,bash&theme=dark" height="40" alt="Go, Linux, Bash" />
 
 - Profiling with **pprof** (CPU, mutex contention)
 - Benchmarking against Redis, Kvrocks and Dragonfly
@@ -62,7 +62,7 @@ Backend engineer at **Orocorp Technologies**, working on fintech payments and le
 <td width="50%" valign="top">
 
 #### ☁️ Cloud & DevOps
-<img src="https://skillicons.dev/icons?i=aws,docker,githubactions,git&theme=dark" alt="AWS, Docker, GitHub Actions, Git" />
+<img src="https://skillicons.dev/icons?i=aws,docker,githubactions,git&theme=dark" height="40" alt="AWS, Docker, GitHub Actions, Git" />
 
 - Infrastructure as code with **AWS CDK**
 - Docker images, multi-platform releases
@@ -75,7 +75,7 @@ Backend engineer at **Orocorp Technologies**, working on fintech payments and le
 <td width="50%" valign="top">
 
 #### 🤖 AI & LLM apps
-<img src="https://skillicons.dev/icons?i=py,fastapi,redis&theme=dark" alt="Python, FastAPI, Redis" />
+<img src="https://skillicons.dev/icons?i=py,fastapi,redis&theme=dark" height="40" alt="Python, FastAPI, Redis" />
 
 - Agent workflows with **LangGraph**
 - **RAG** with ChromaDB and local models via Ollama
@@ -85,7 +85,7 @@ Backend engineer at **Orocorp Technologies**, working on fintech payments and le
 <td width="50%" valign="top">
 
 #### 🎨 Frontend
-<img src="https://skillicons.dev/icons?i=react,nextjs,ts,tailwind&theme=dark" alt="React, Next.js, TypeScript, Tailwind" />
+<img src="https://skillicons.dev/icons?i=react,nextjs,ts,tailwind&theme=dark" height="40" alt="React, Next.js, TypeScript, Tailwind" />
 
 - **React** and **Next.js**
 - TypeScript in strict mode, Tailwind CSS
